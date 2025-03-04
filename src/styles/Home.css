@@ -42,7 +42,7 @@
 
 .social-links a {
   font-size: 1.5rem;
-  color: #ff8fab;
+  color: #4a90e2;
   margin: 0 1rem;
   transition: transform 0.3s ease;
 }
@@ -63,9 +63,21 @@
   margin: 0 auto 2rem;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid #ff8fab;
-  box-shadow: 0 4px 15px rgba(255, 143, 171, 0.2);
+  border: 3px solid #4a90e2;
+  box-shadow: 
+    0 4px 15px rgba(74, 144, 226, 0.2),
+    0 8px 30px rgba(44, 82, 130, 0.3),
+    0 15px 45px rgba(26, 54, 93, 0.1);
   position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 6px 20px rgba(74, 144, 226, 0.25),
+    0 10px 35px rgba(44, 82, 130, 0.35),
+    0 18px 50px rgba(26, 54, 93, 0.15);
 }
 
 .profile-photo img {

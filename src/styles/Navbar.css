@@ -3,8 +3,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 2rem;
-  background-color: white;
-  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  background-color: rgba(44, 82, 130, 0.2);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 15px rgba(44, 82, 130, 0.25);
 }
 
 .nav-logo {
@@ -12,7 +13,14 @@
   font-size: 1.6rem;
   font-weight: bold;
   text-decoration: none;
-  color: #ff8fab;
+  color: #1a365d;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-logo:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 2px 4px rgba(26, 54, 93, 0.2);
 }
 
 .nav-links {
@@ -24,24 +32,49 @@
 
 .nav-links li {
   margin-left: 2.5rem;
+  position: relative;
 }
 
 .nav-links a {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  color: #666;
-  font-weight: 400;
-  transition: color 0.3s ease;
+  color: #1a365d;
+  font-weight: 500;
+  transition: all 0.3s ease;
   font-size: 0.95rem;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #1a365d;
+  transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #ff8fab;
+  color: #1a365d;
+  transform: translateY(-2px);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .menu-icon {
   display: none;
   cursor: pointer;
+  color: #1a365d;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -56,9 +89,10 @@
     left: 0;
     right: 0;
     flex-direction: column;
-    background-color: white;
+    background-color: rgba(44, 82, 130, 0.2);
+    backdrop-filter: blur(8px);
     padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 15px rgba(44, 82, 130, 0.25);
   }
 
   .nav-links.active {
@@ -67,5 +101,9 @@
 
   .nav-links li {
     margin: 1rem 0;
+  }
+
+  .nav-links a::after {
+    height: 1px;
   }
 } 
