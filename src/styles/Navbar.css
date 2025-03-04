@@ -10,17 +10,19 @@
 
 .nav-logo {
   font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
   color: #1a365d;
+  text-shadow: 2px 2px 4px rgba(74, 144, 226, 0.1);
   transition: all 0.3s ease;
   position: relative;
+  padding: 0.2rem 0;
 }
 
 .nav-logo:hover {
   transform: translateY(-2px);
-  text-shadow: 0 2px 4px rgba(26, 54, 93, 0.2);
+  text-shadow: 3px 3px 6px rgba(74, 144, 226, 0.2);
 }
 
 .nav-links {
@@ -57,13 +59,21 @@
   transition: width 0.3s ease;
 }
 
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
 .nav-links a:hover {
+  opacity: 1;
   color: #1a365d;
   transform: translateY(-2px);
 }
 
-.nav-links a:hover::after {
-  width: 100%;
+.nav-links a.active {
+  font-weight: 600;
+  opacity: 1;
+  color: #1a365d;
 }
 
 .menu-icon {
