@@ -747,4 +747,281 @@
 .about.dark .timeline-dot {
   background: var(--accent-color);
   border-color: var(--bg-primary);
+}
+
+/* Add these dark theme styles */
+.about.dark .about-content {
+  background-color: var(--card-bg);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 10px 30px rgba(255, 255, 255, 0.1),
+    0 15px 40px rgba(255, 255, 255, 0.1);
+}
+
+.about.dark .about-header h1 {
+  color: var(--text-primary);
+}
+
+.about.dark .about-header .location {
+  color: var(--text-secondary);
+}
+
+.about.dark .about-text p {
+  color: var(--text-secondary);
+}
+
+.about.dark .hobbies-section h2 {
+  color: var(--text-primary);
+}
+
+.about.dark .hobby-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.about.dark .hobby-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+}
+
+.about.dark .hobby-title {
+  color: var(--text-primary);
+}
+
+.about.dark .hobby-icon {
+  color: var(--accent-color);
+}
+
+.about.dark .education-section h3,
+.about.dark .participations-section h3 {
+  color: var(--text-primary);
+}
+
+.about.dark .education-section h3::after,
+.about.dark .participations-section h3::after {
+  background: linear-gradient(90deg, var(--accent-color), var(--text-primary));
+}
+
+.about.dark .education-item h4,
+.about.dark .participation-item h4 {
+  color: var(--text-primary);
+}
+
+.about.dark .participation-item .organizer,
+.about.dark .participation-item .participation-type,
+.about.dark .participation-item .participation-date {
+  color: var(--text-secondary);
+}
+
+.about.dark .credential-link {
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+.about.dark .credential-link:hover {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.about.dark .interests-section h2 {
+  color: var(--text-primary);
+}
+
+.about.dark .hobby-title {
+  color: var(--accent-color);
+}
+
+.about.dark .interest-name {
+  color: var(--text-primary);
+}
+
+.about.dark .interest-item {
+  background: var(--card-bg);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.about.dark .interest-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.about.dark .language-item {
+  background: var(--card-bg);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.about.dark .language-name {
+  color: var(--text-primary);
+}
+
+.about.dark .language-level {
+  color: var(--text-secondary);
+}
+
+.about.dark .language-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.about.dark .language-icon {
+  opacity: 0.9;
+}
+
+.about.dark .languages-section h2 {
+  color: var(--text-primary);
+}
+
+.about.dark .languages-section h2::after {
+  background: linear-gradient(90deg, var(--accent-color), var(--text-primary));
+}
+
+.about.dark .education-item {
+  background: var(--card-bg);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.about.dark .education-item h4 {
+  color: var(--text-primary);
+}
+
+.about.dark .institution, 
+.about.dark .duration, 
+.about.dark .field,
+.about.dark .exam-year,
+.about.dark .education-details li,
+.about.dark .current-gpa,
+.about.dark .academic-achievements {
+  color: var(--text-secondary);
+}
+
+.about.dark .education-details li {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.about.dark .education-details li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.about.dark .institution a {
+  color: var(--accent-color);
+}
+
+.about.dark .institution a:hover {
+  color: var(--text-primary);
+}
+
+.about.dark .education-section h3::after {
+  background: linear-gradient(90deg, var(--accent-color), var(--text-primary));
+}
+
+.about.dark .experience-section h3 {
+  color: var(--text-primary);
+}
+
+.about.dark .experience-section h3::after {
+  background: linear-gradient(90deg, var(--accent-color), var(--text-primary));
+}
+
+.about.dark .experience-item {
+  background: var(--card-bg);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.about.dark .experience-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.about.dark .experience-item h4 {
+  color: var(--text-primary);
+}
+
+.about.dark .company-description,
+.about.dark .role-description,
+.about.dark .project-description,
+.about.dark .feature-item {
+  color: var(--text-secondary);
+}
+
+.about.dark .projects-section h5 {
+  color: var(--text-primary);
+}
+
+.about.dark .projects-section h5::after {
+  background: linear-gradient(90deg, var(--accent-color), var(--text-primary));
+}
+
+.about.dark .project-item {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about.dark .project-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.about.dark .project-item h6 {
+  color: var(--text-primary);
+}
+
+.about.dark .tech-tag {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.about.dark .tech-tag:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.about.dark .certifications-section h3 {
+  color: var(--text-primary);
+}
+
+.about.dark .certifications-section h3::after {
+  background: linear-gradient(90deg, var(--accent-color), var(--text-primary));
+}
+
+.about.dark .certification-item {
+  background: var(--card-bg);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.about.dark .certification-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.about.dark .certification-title h4 {
+  color: var(--text-primary);
+}
+
+.about.dark .issuer,
+.about.dark .issue-date,
+.about.dark .credential-id {
+  color: var(--text-secondary);
+}
+
+.about.dark .skill-tag {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.about.dark .skill-tag:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.about.dark .credential-link {
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+.about.dark .credential-link:hover {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.about.dark .issuer-logo {
+  background: var(--card-bg);
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
 } 
