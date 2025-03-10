@@ -44,11 +44,26 @@
   font-size: 1.5rem;
   color: #4a90e2;
   margin: 0 1rem;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .social-links a:hover {
   transform: translateY(-3px);
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+}
+
+.social-links a:active {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.4);
 }
 
 .cta-buttons {
@@ -119,4 +134,16 @@
     font-size: 1rem;
     line-height: 1.6;
   }
+}
+
+.typing-text {
+  min-height: 2.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typing-text > div {
+  font-weight: 400;
 } 

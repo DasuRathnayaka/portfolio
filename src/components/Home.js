@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faGoogle, faMedium } from '@fortawesome/free-brands-svg-icons';
+import { TypeAnimation } from 'react-type-animation';
 import '../styles/Home.css';
 
 const Home = () => {
@@ -12,7 +13,21 @@ const Home = () => {
           <img src="/images/profile-photo.png" alt="Dasuni Rathnayaka" />
         </div>
         <h1>Hi, I'm Dasuni Rathnayaka</h1>
-        <h2>IT Undergraduate at University of Moratuwa</h2>
+        <div className="typing-text">
+          <TypeAnimation
+            sequence={[
+              'IT Undergraduate at University of Moratuwa',
+              2000,
+              'Software Engineer',
+              2000,
+              'AI/ML Engineer',
+              2000,
+            ]}
+            speed={50}
+            repeat={Infinity}
+            style={{ fontSize: '1.5rem', color: '#666', fontFamily: 'Poppins, sans-serif' }}
+          />
+        </div>
         <div className="hero-description">
           <p>A passionate and enthusiastic IT professional with a drive for innovation and excellence. 
           I'm committed to working smart, taking on challenges, and bringing fresh perspectives to every project.</p>
@@ -28,6 +43,9 @@ const Home = () => {
           </a>
           <a href="https://www.linkedin.com/in/dasuni-rathnayaka" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="https://dasunirathnayaka.medium.com/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faMedium} />
           </a>
         </div>
         <div className="cta-buttons">

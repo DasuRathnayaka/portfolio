@@ -66,7 +66,7 @@ body, #root {
 }
 
 .secondary {
-  background-color: transparent;
+  background-color: white;
   color: #4a90e2;
   border: 2px solid #4a90e2;
 }
