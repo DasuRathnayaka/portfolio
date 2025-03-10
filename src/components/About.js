@@ -1,7 +1,10 @@
 import React from 'react';
 import '../styles/About.css';
+import { useTheme } from '../context/ThemeContext';
 
 const About = () => {
+  const { isDarkMode } = useTheme();
+
   const interests = [
     { name: 'Travelling', icon: '✈️' },
     { name: 'Volunteering', icon: '🤝' },
@@ -180,7 +183,7 @@ const About = () => {
   ];
 
   return (
-    <div className="about">
+    <div className={`about ${isDarkMode ? 'dark' : ''}`}>
       <div className="about-content">
         <div className="about-header">
           <h1>DASUNI RATHNAYAKA</h1>
