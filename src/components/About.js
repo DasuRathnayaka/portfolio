@@ -20,15 +20,6 @@ const About = () => {
 
   const gpServiceTechnologies = ['Django', 'Django REST'];
 
-  const gpServiceDescription = 
-    'Developed GPService platform using Django and Django REST Framework • ' +
-    'Enabled online video consultations, form-based medical assessments, and prescription management • ' +
-    'Designed Entity-Relationship Diagram (ERD) and database models • ' +
-    'Implemented secure appointment scheduling and role-based access control • ' +
-    'Developed nested resources and asynchronous tasks for prescription processing • ' +
-    'Built RESTful APIs for CRUD operations, ensuring data validation and secure authentication • ' +
-    'Facilitated seamless doctor-patient interactions through a well-structured API architecture';
-
   const certifications = [
     {
       title: "Machine Learning with Python",
