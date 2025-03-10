@@ -3,11 +3,14 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faGoogle, faMedium } from '@fortawesome/free-brands-svg-icons';
 import { TypeAnimation } from 'react-type-animation';
+import { useTheme } from '../context/ThemeContext';
 import '../styles/Home.css';
 
 const Home = () => {
+  const { isDarkMode } = useTheme();
+  
   return (
-    <div className="home">
+    <div className={`home ${isDarkMode ? 'dark' : ''}`}>
       <div className="hero">
         <div className="profile-photo">
           <img src="/images/profile-photo.png" alt="Dasuni Rathnayaka" />
@@ -25,7 +28,7 @@ const Home = () => {
             ]}
             speed={50}
             repeat={Infinity}
-            style={{ fontSize: '1.5rem', color: '#666', fontFamily: 'Poppins, sans-serif' }}
+            style={{ fontSize: '1.5rem', color: 'var(--text-secondary)', fontFamily: 'Poppins, sans-serif' }}
           />
         </div>
         <div className="hero-description">

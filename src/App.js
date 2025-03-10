@@ -6,9 +6,17 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Snow from './components/Snow';
+import { useTheme } from './context/ThemeContext';
 import './App.css';
+import { useEffect } from 'react';
 
 function App() {
+  const { isDarkMode } = useTheme();
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+  }, [isDarkMode]);
+
   return (
     <Router>
       <div className="App">

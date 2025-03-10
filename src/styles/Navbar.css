@@ -35,6 +35,8 @@
 .nav-links li {
   margin-left: 2.5rem;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .nav-links a {
@@ -115,5 +117,38 @@
 
   .nav-links a::after {
     height: 1px;
+  }
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar.dark {
+  background-color: var(--navbar-bg);
+}
+
+.navbar.dark .nav-logo,
+.navbar.dark .nav-links a,
+.navbar.dark .menu-icon {
+  color: var(--text-primary);
+}
+
+.navbar.dark .nav-links a::after {
+  background-color: var(--text-primary);
+}
+
+.theme-toggle-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .theme-toggle-wrapper {
+    margin: 1rem 0;
+    justify-content: center;
   }
 } 
