@@ -249,13 +249,14 @@ const About = () => {
             <p className="field">Faculty of Information Technology</p>
             <div className="education-details">
               <p className="status">Final-year Undergraduate</p>
-              <p className="gpa">Current GPA - 3.74</p>
+              <p className="gpa">Current GPA - 3.77</p>
               <div className="achievements">
                 <h5>Academic Achievements</h5>
                 <ul>
                   <li>Level 1 semester 2 - Dean's list (SGPA - 3.8)</li>
                   <li>Level 2 semester 2 - Dean's list (SGPA - 3.83)</li>
                   <li>Level 3 semester 1 - SGPA 3.78</li>
+                  <li>Level 4 semester 1 - Dean's list (SGPA - 3.91)</li>
                 </ul>
               </div>
             </div>
