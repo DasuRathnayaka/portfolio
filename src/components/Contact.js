@@ -1,4 +1,6 @@
 import React, { useState, useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faGoogle, faMedium } from '@fortawesome/free-brands-svg-icons';
 import { useTheme } from '../context/ThemeContext';
 import '../styles/Contact.css';
 
@@ -77,11 +79,17 @@ const Contact = () => {
             <div className="social-section">
               <h4>Connect with Me</h4>
               <div className="social-links">
-                <a href="https://github.com/DasuRathnayaka" target="_blank" rel="noopener noreferrer">
-                  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+                <a href="mailto:dasu.rathnayaka@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGoogle} />
                 </a>
-                <a href="https://linkedin.com/in/dasuni-rathnayaka" target="_blank" rel="noopener noreferrer">
-                  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+                <a href="https://github.com/DasuRathnayaka" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+                <a href="https://www.linkedin.com/in/dasuni-rathnayaka" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a href="https://dasunirathnayaka.medium.com/" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faMedium} />
                 </a>
               </div>
             </div>

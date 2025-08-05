@@ -34,48 +34,23 @@ const Projects = () => {
   
   const projects = [
     {
-      title: "🌍 Travel Place Recommendation System",
-      description: "Developed an advanced AI-powered travel recommendation platform using Heterogeneous Graph Transformer (HGT) neural networks for personalized destination suggestions",
+      title: "Travel Place Recommendation System",
+      description: "Developed AI-powered travel recommendation platform using Heterogeneous Graph Transformer (HGT) neural networks for personalized destination suggestions.",
       sections: [
         {
-          title: "🤖 Machine Learning Core",
-          points: [
-            "Implemented a sophisticated HGT-based recommendation engine using PyTorch and PyTorch Geometric frameworks",
-            "Employed heterogeneous graph neural networks with multi-head attention mechanisms to model complex relationships between users and travel destinations",
-            "Designed dual-node architecture with user nodes (demographics, preferences, travel patterns) and location nodes (categories, features, activities, sentiment scores)",
-            "Connected nodes through multiple edge types including user-visits-location, location-similarity, and content-based relationships",
-            "Engineered advanced feature processing pipeline with 352-dimensional location features and 83-dimensional user features",
-            "Implemented weighted importance systems optimized through Bayesian optimization",
-            "Developed hybrid recommendation strategies combining content-based filtering, collaborative filtering, and weather-aware ranking",
-            "Built comprehensive cold-start handling for new users and locations by extending graph structures dynamically",
-            "Implemented sophisticated recommendation algorithms including content-based recommendations using cosine similarity on weighted features",
-            "Integrated weather compatibility scoring using real-time weather data to adjust recommendations based on location-specific weather conditions",
-            "Developed budget-aware recommendation system incorporating hotel price data and budget compatibility scoring with exponential decay functions",
-            "Achieved high-performance model architecture with 2.3M parameters, 320-dimensional hidden layers, 8 attention heads, and 2 HGT layers",
-            "Optimized through comprehensive evaluation framework achieving 86%+ accuracy in matching user preferences to appropriate location categories"
-          ]
+          title: "Machine Learning Core",
+          description: "Implemented HGT-based recommendation engine using PyTorch and PyTorch Geometric with heterogeneous graph neural networks and multi-head attention mechanisms. Designed dual-node architecture with user nodes (demographics, preferences) and location nodes (categories, features, activities) connected through multiple edge types. Engineered 352-dimensional location features and 83-dimensional user features with weighted importance systems optimized through Bayesian optimization. Developed hybrid recommendation strategies combining content-based filtering, collaborative filtering, and weather-aware ranking with adaptive alpha weights learned through neural gating mechanisms. Built comprehensive cold-start handling for new users/locations by extending graph structures dynamically. Integrated weather compatibility scoring using real-time weather data and budget-aware recommendations with hotel price data. Achieved high-performance architecture with 2.3M parameters, 320-dimensional hidden layers, 8 attention heads, and 2 HGT layers. Optimized through comprehensive evaluation achieving 86%+ accuracy in matching user preferences to appropriate destinations."
         },
         {
-          title: "⚙️ Backend Architecture",
-          points: [
-            "Developed robust Flask-based API following SOLID principles with modular controller-service-model architecture",
-            "Implemented RESTful endpoints for weather data, location management, recommendation generation, and configuration options",
-            "Integrated MySQL database with automated seeding and migration systems",
-            "Built weather integration service connecting to external weather APIs with location-specific weather compatibility mapping",
-            "Designed comprehensive error handling and logging systems with health check endpoints and CORS configuration for frontend integration"
-          ]
+          title: "Backend Architecture",
+          description: "Developed Flask-based RESTful API following SOLID principles with modular controller-service-model architecture. Integrated MySQL database with automated seeding, weather integration service, and comprehensive error handling."
         },
         {
-          title: "🎨 Frontend Interface",
-          points: [
-            "Created modern React.js user interface with interactive recommendation forms featuring autocomplete fields, date pickers, and range sliders",
-            "Implemented responsive design with FontAwesome icons, real-time form validation, and loading states",
-            "Built intuitive user experience with grid-based option selection, multi-select activity preferences, and comprehensive results display",
-            "Integrated seamless API communication with error handling and dynamic option loading from backend services"
-          ]
+          title: "Frontend Interface",
+          description: "Created React.js user interface with interactive forms, autocomplete fields, date pickers, and responsive design. Built intuitive UX with grid-based selections and seamless API communication."
         }
       ],
-      technologies: ["PyTorch", "PyTorch Geometric", "Flask", "React.js", "MySQL", "NumPy", "Pandas", "Scikit-learn", "JavaScript", "CSS", "RESTful APIs"],
+      technologies: ["PyTorch", "PyTorch Geometric", "Flask", "React.js", "MySQL", "NumPy", "Pandas", "Scikit-learn"],
       images: [
         "/images/FireShot Capture 129 - Vite + React - [localhost].png",
         "/images/FireShot Capture 130 - Vite + React - [localhost].png",
@@ -123,11 +98,15 @@ const Projects = () => {
                   {project.sections.map((section, sectionIndex) => (
                     <div key={sectionIndex} className="project-section">
                       <h4 className="section-title">{section.title}</h4>
-                      <ul className="project-points">
-                        {section.points.map((point, pointIndex) => (
-                          <li key={pointIndex} className="project-point">{point}</li>
-                        ))}
-                      </ul>
+                      {section.points ? (
+                        <ul className="project-points">
+                          {section.points.map((point, pointIndex) => (
+                            <li key={pointIndex} className="project-point">{point}</li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="section-description">{section.description}</p>
+                      )}
                     </div>
                   ))}
                 </div>
